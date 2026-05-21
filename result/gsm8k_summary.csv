@@ -1,0 +1,4 @@
+task,method,status,samples,accuracy_pct,prompt_level_strict_acc,inst_level_strict_acc,prompt_level_loose_acc,inst_level_loose_acc,avg_lm_head_ms,avg_e2e_ms,tpot_ms,output_jsonl
+gsm8k,Original,done,128,39.84375,,,,,51.0068,402.8644,4.6198,/home/kjw/Research/Paper/result/gsm8k_original.jsonl
+gsm8k,CFHead,done,128,39.84375,,,,,17.8129,373.8763,4.2441,/home/kjw/Research/Paper/result/gsm8k_cfhead.jsonl
+gsm8k,FlashHead,done,128,28.90625,,,,,37.9190,537.8491,4.2947,/home/kjw/Research/Paper/result/gsm8k_flashhead.jsonl

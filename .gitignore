@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Build artifacts
+kernel/build/
+
+# Cache (pre-computed .pt artifacts, can be rebuilt)
+cache/
+
+# Claude Code internal
+.claude/
+
+# macOS
+.DS_Store

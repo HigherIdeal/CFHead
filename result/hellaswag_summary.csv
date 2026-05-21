@@ -1,0 +1,4 @@
+task,method,status,samples,accuracy_pct,prompt_level_strict_acc,inst_level_strict_acc,prompt_level_loose_acc,inst_level_loose_acc,avg_lm_head_ms,avg_e2e_ms,tpot_ms,output_jsonl
+hellaswag,Original,done,128,39.84375,,,,,1.2422,22.6397,11.3198,/home/kjw/Research/Paper/result/hellaswag_original.jsonl
+hellaswag,CFHead,done,128,39.84375,,,,,0.5654,19.6609,9.8304,/home/kjw/Research/Paper/result/hellaswag_cfhead.jsonl
+hellaswag,FlashHead,done,128,34.375,,,,,0.9341,21.0694,9.3642,/home/kjw/Research/Paper/result/hellaswag_flashhead.jsonl

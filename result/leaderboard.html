@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="1">
+  <title>Experiment Leaderboard</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f4f5f0;
+      --ink: #1e211d;
+      --muted: #6b6f65;
+      --line: #d8dace;
+      --head: #e6e9dc;
+      --accent: #2a6b6f;
+      --surface: #ffffff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    main {
+      max-width: 1100px;
+      margin: 44px auto;
+      padding: 0 28px;
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      margin-bottom: 4px;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 12.5px;
+      margin-bottom: 28px;
+    }
+    .wrap {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0,0,0,.06);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--surface);
+      font-size: 13.5px;
+    }
+    th, td {
+      padding: 10px 15px;
+      border-bottom: 1px solid var(--line);
+      text-align: center;
+      white-space: nowrap;
+    }
+    th:first-child, td:first-child {
+      text-align: left;
+      font-weight: 600;
+      padding-left: 18px;
+    }
+    th {
+      background: var(--head);
+      font-weight: 700;
+      font-size: 12px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    tbody tr:last-child td { border-bottom: none; }
+    tbody tr:hover td { background: #eef1e8; }
+    td.score { color: var(--accent); font-weight: 700; }
+    td.empty { color: var(--muted); }
+    td.best { font-weight: 900; text-decoration: underline; }
+    td.score.best { color: var(--accent); font-weight: 900; text-decoration: underline; }
+    .env-pills {
+      display: flex; flex-wrap: wrap; gap: 8px;
+      margin: 12px 0 20px;
+    }
+    .pill {
+      background: white; border: 1px solid var(--line);
+      border-radius: 4px; padding: 3px 10px;
+      font-size: 12px; color: var(--muted);
+    }
+    .settings-heading {
+      font-size: 16px;
+      font-weight: 700;
+      margin: 44px 0 16px;
+      color: var(--ink);
+    }
+    .settings-block {
+      margin-bottom: 28px;
+    }
+    .settings-block h3 {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+    .settings-block table {
+      font-size: 12.5px;
+    }
+    .settings-block th, .settings-block td {
+      padding: 7px 12px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Experiment Leaderboard</h1>
+    <div class="meta">Generated at 2026-05-21 15:55:51 &nbsp;·&nbsp; auto-refreshes every 1 s</div>
+    <div class="wrap"><table><thead><tr><th>Method</th><th>Memory (MiB)</th><th>Arc-Challenge</th><th>LM/sample</th><th>E2E/sample</th><th>TPOT</th></tr></thead><tbody><tr><td>Original</td><td class="empty">—</td><td class="score best">46.09%</td><td>1.00×</td><td>1.00×</td><td>1.00×</td></tr>
+<tr><td>VocabTrim</td><td class="empty">—</td><td class="score best">46.09%</td><td class="score best">5.64×</td><td class="empty">0.79×</td><td class="score best">1.59×</td></tr>
+<tr><td>FlashHead</td><td class="empty">—</td><td class="score">35.94%</td><td class="score">1.36×</td><td class="score best">1.14×</td><td class="score">1.23×</td></tr>
+<tr><td>Ours</td><td class="empty">—</td><td class="score best">46.09%</td><td class="score">2.00×</td><td class="score">1.11×</td><td class="score">1.10×</td></tr></tbody></table></div>
+    <h2 class="settings-heading">Experiment Settings</h2><div class="env-pills"><span class="pill">dtype: auto</span></div><div class="settings-block"><h3>Task Settings</h3><div class="wrap"><table><thead><tr><th>Task</th><th>Scoring</th><th>Shots</th><th>Samples</th><th>Max tokens</th><th>Seed</th></tr></thead><tbody><tr><td>Arc-Challenge</td><td>fewshot_choice_generation</td><td>5</td><td>128</td><td>4</td><td>99</td></tr></tbody></table></div></div>
+  </main>
+</body>
+</html>

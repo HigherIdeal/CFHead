@@ -1,0 +1,4 @@
+task,method,status,samples,accuracy_pct,prompt_level_strict_acc,inst_level_strict_acc,prompt_level_loose_acc,inst_level_loose_acc,avg_lm_head_ms,avg_e2e_ms,tpot_ms,output_jsonl
+arc_challenge,CFHead,done,128,46.09375,,,,,0.6237,15.1490,7.5745,/home/kjw/Research/Paper/result/arc_challenge_cfhead.jsonl
+arc_challenge,FlashHead,done,128,35.9375,,,,,0.9052,14.6973,6.7671,/home/kjw/Research/Paper/result/arc_challenge_flashhead.jsonl
+arc_challenge,VocabTrim,done,128,46.09375,,,,,0.2223,21.0892,5.2723,/home/kjw/Research/Paper/result/arc_challenge_vocabtrim.jsonl
