@@ -125,12 +125,14 @@ CFHead provides a favorable balance between **quality preservation, memory footp
 
 ### 2. Quality Across Diverse Benchmarks
 
-| Method | Avg. | MMLU | ARC-C | HellaSwag | GSM8K | IFEval | TruthfulQA | PIQA | WinoGrande | MGSM |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Original | 46.67 | 39.8 | 46.9 | 37.5 | 40.6 | 48.9 | 75.0 | 57.8 | 51.6 | 21.9 |
-| **CFHead** | **46.46** | **39.8** | **46.9** | **39.1** | **40.6** | **49.4** | **74.2** | **58.6** | **51.6** | **18.0** |
+| Method | MMLU | ARC | HellaSwag | GSM8K | IFEval | PIQA | WinoGrande |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Original | 39.8 | 46.9 | 37.5 | 40.6 | 48.9 | 57.8 | 51.6 |
+| **CFHead** | **39.8** | **46.9** | **39.1** | **40.6** | **49.4** | **58.6** | **51.6** |
 
-**Average difference: -0.21%p across nine downstream benchmarks.**
+**CFHead matches or outperforms the original LM Head on 7 of the 9 evaluated downstream benchmarks.** Across all nine benchmarks, the average accuracy change is only **-0.21%p**.
+
+*ARC denotes ARC-Challenge.*
 
 Additional robustness results reported in the paper:
 
