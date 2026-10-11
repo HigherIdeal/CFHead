@@ -296,17 +296,16 @@ The paper intentionally uses different operating points for different evaluation
 If CFHead is useful in your research, please cite:
 
 ```bibtex
-@article{kim2026fast,
-  author  = {Jung-Woo Kim and Seung-Hwan Yoon and Hye-Rin Lee and Hak-Bum Lee and Su-Min Oh and Seung-Yoon Kang and Young-Ho Seo},
-  title   = {Fast LM Head via Coarse-Fine Decomposition and Tile-Wise Weight Clustering},
-  journal = {IEEE Transactions on Computers},
-  volume  = {75},
-  number  = {11},
-  pages   = {3927--3939},
-  month   = nov,
-  year    = {2026},
-  doi     = {10.1109/TC.2026.3725429}
-}
+@ARTICLE{11658938,
+  author={Kim, Jung-Woo and Yoon, Seung-Hwan and Lee, Hye-Rin and Lee, Hak-Bum and Oh, Su-Min and Kang, Seung-Yoon and Seo, Young-Ho},
+  journal={IEEE Transactions on Computers}, 
+  title={Fast LM Head via Coarse-Fine Decomposition and Tile-Wise Weight Clustering}, 
+  year={2026},
+  volume={75},
+  number={11},
+  pages={3927-3940},
+  keywords={Decoding;Head;Modeling;Tiles;Vocabulary;Indexes;Indexing;Accuracy;Vectors;Costing;LLM;acceleration;LM head;logits;GPU;bandwidth},
+  doi={10.1109/TC.2026.3725429}}
 ```
 
 ---
