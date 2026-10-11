@@ -3,7 +3,8 @@
 **Fast LM Head via Coarse-Fine Decomposition and Tile-Wise Weight Clustering**  
 IEEE Transactions on Computers, Vol. 75, No. 11, 2026
 
-[**IEEE Xplore**](https://ieeexplore.ieee.org/document/11658938) · [**DOI**](https://doi.org/10.1109/TC.2026.3725429)
+[![IEEE TC](https://img.shields.io/badge/IEEE%20TC-Published-00629B)](https://ieeexplore.ieee.org/document/11658938)
+[![DOI](https://img.shields.io/badge/DOI-10.1109%2FTC.2026.3725429-blue)](https://doi.org/10.1109/TC.2026.3725429)
 
 <!--
 Optional: add the author-owned teaser / graphical abstract here when available.
