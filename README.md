@@ -1,6 +1,5 @@
-# CFHead
+# CFHead: **Fast LM Head via Coarse-Fine Decomposition and Tile-Wise Weight Clustering**
 
-**Fast LM Head via Coarse-Fine Decomposition and Tile-Wise Weight Clustering**  
 IEEE Transactions on Computers, Vol. 75, No. 11, 2026
 
 [![IEEE TC](https://img.shields.io/badge/IEEE%20TC-Published-00629B)](https://ieeexplore.ieee.org/document/11658938)
