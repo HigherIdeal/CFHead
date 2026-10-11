@@ -122,16 +122,20 @@ CFHead provides a favorable balance between **quality preservation, memory footp
 
 \* In the paper comparison, VocabTrim is used as a static vocabulary-pruning baseline applied directly to final generation without target-model verification.
 
-### 2. Quality Across Diverse Benchmarks
+### 2. Quality Across Representative Benchmarks
 
-| Method | MMLU | ARC | HellaSwag | GSM8K | IFEval | PIQA | WinoGrande |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| Original | 39.8 | 46.9 | 37.5 | 40.6 | 48.9 | 57.8 | 51.6 |
-| **CFHead** | **39.8** | **46.9** | **39.1** | **40.6** | **49.4** | **58.6** | **51.6** |
+| **Method** | **MMLU** | **ARC** | **HellaSwag** | **GSM8K** | **PIQA** |
+|---|---:|---:|---:|---:|---:|
+| Original | 39.8 | 46.9 | 37.5 | 40.6 | 57.8 |
+| VocabTrim | 39.8 | 46.9 | 37.5 | 5.47 | 57.8 |
+| FlashHead | 31.3 | 35.9 | 37.5 | 26.6 | 47.7 |
+| **CFHead** | **39.8** | **46.9** | **39.1** | **40.6** | **58.6** |
 
-**CFHead matches or outperforms the original LM Head on 7 of the 9 evaluated downstream benchmarks.** Across all nine benchmarks, the average accuracy change is only **-0.21%p**.
+**CFHead preserves the original model quality while avoiding the substantial degradation observed in competing LM Head reduction methods.**
 
-*ARC denotes ARC-Challenge.*
+Across the full set of nine downstream benchmarks reported in the paper, CFHead changes average accuracy by only **-0.21%p**, compared with **-6.34%p for VocabTrim** and **-10.3%p for FlashHead**.
+
+*ARC denotes ARC-Challenge. Full nine-benchmark results are available in the paper.*
 
 Additional robustness results reported in the paper:
 
