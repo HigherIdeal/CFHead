@@ -7,7 +7,7 @@ IEEE Transactions on Computers, Vol. 75, No. 11, 2026
 [![DOI](https://img.shields.io/badge/DOI-10.1109%2FTC.2026.3725429-blue)](https://doi.org/10.1109/TC.2026.3725429)
 
 <p align="center">
-  <img src="assets/cfhead_teaser.webp" width="1000" alt="CFHead teaser: full LM Head projection versus coarse-fine candidate screening and exact refinement">
+  <img src="assets/cfhead_teaser.png" width="1000" alt="CFHead teaser: full linear projection versus coarse-fine LM Head with reduced coarse-stage computation and exact top-k refinement">
 </p>
 
 ## Overview
